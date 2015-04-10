@@ -190,7 +190,8 @@
 					this.containerWidth = $(this.id+"-container").width()
 					var elem = $(this.id+"-container").get(0);
 
-					if (elem.scrollHeight > elem.clientHeight) {
+					if ((elem.scrollHeight > elem.clientHeight) && 
+						(elem.scrollWidth > elem.clientWidth)) {
 						this.containerWidth += this.scrollbarWidth();
 						$(this.id+"-container").width(this.containerWidth);
 					}
