@@ -49,7 +49,9 @@ The original `select` gets hidden. The drop down checkbox list inherits the widt
 		});
 	</script>
 
-The drop down checkbox list has resize capability turned on by default. You can disable or change that with the resize option. It uses the same values as the css "resize" property (both, none, horizontal, vertical, etc.)
+The drop down checkbox list has resize capability turned on by default for browsers that support it. You can disable or change that with the resize option. It uses the same values as the css "resize" property (both, none, horizontal, vertical, etc.).
+
+NOTE: resizing works a little differently on Google Chrome than Firefox, possibly because of issues #[72841](https://code.google.com/p/chromium/issues/detail?id=72841) and [94583](https://code.google.com/p/chromium/issues/detail?id=94583)
 
 	<script>
 		$(document).ready(function() {
@@ -59,4 +61,5 @@ The drop down checkbox list has resize capability turned on by default. You can 
 			});
 		});
 	</script>
+
 
