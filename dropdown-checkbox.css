@@ -1,0 +1,55 @@
+.cblist-select {
+	border: 1px solid #c7c7c7;
+	background-color: #fff;
+	height: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.cblist-current-selection {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.cblist-drop {
+	float: right;
+	width: 18px;
+	height: 18px;
+	font-size: smaller;
+	text-align: center;
+	line-height: 18px;
+}
+
+.cblist-select:hover, .cblist-expander:hover {
+	cursor: default;
+}
+
+.cblist-container {
+	position: absolute;
+	margin: -1px 0 0 0;
+	padding: 0;
+	border: 1px solid #c7c7c7;
+	background-color: #fff;
+	overflow-y: auto;
+	z-index: 10001;
+	display: none;
+	/* Chrome & Firefox only... Chrome bug resizes to 'width' and Firefix to min-width */
+	resize: both;			
+	overflow: none;
+}
+
+.cblist-option {
+	white-space: nowrap;
+}
+
+.cblist-option:hover {
+	background-color: #c7c7c7;
+	color: #fff;
+}
+
+.cblist-option-checked {
+	background-color: #c7c7c7;
+	color: #fff;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown Checkbox Demo</title>
+	<script src="jquery-1.8.3.min.js"></script>
+	<script src="dropdown-checkbox.js"></script>
+	<link rel="stylesheet" href="dropdown-checkbox.css">
+</head>
+<body>
+	<p>
+		<strong>Normal multi-select &lt;select&gt;</strong>
+	</p>
+	<select multiple="multiple">
+		<option value="1">Apples</option>
+		<option value="2">Oranges</option>
+		<option value="3">Cherries</option>
+		<option value="4">Peaches</option>
+		<option value="5">Pears</option>
+		<option value="6">Bananas</option>
+	</select>
+
+	<p>
+		<strong>Dropdown-select</strong>
+	</p>
+	<select id="fruits1" multiple="multiple">
+		<option value="1">Apples</option>
+		<option value="2">Oranges</option>
+		<option value="3">Cherries</option>
+		<option value="4">Peaches</option>
+		<option value="5">Pears</option>
+	</select>
+
+	<p>Inherits parent's width...</p>
+	<select id="fruits2" multiple="multiple" style="width:200px;">
+		<option value="1">Apples</option>
+		<option value="2">Oranges</option>
+		<option value="3">Cherries</option>
+		<option value="4">Peaches</option>
+		<option value="5">Pears</option>
+		<option value="6">Bananas</option>
+	</select>
+
+	<p>...or set your own</p>
+	<select id="fruits3" multiple="multiple" style="width:200px;">
+		<option value="1">Apples</option>
+		<option value="2">Oranges</option>
+		<option value="3">Cherries</option>
+		<option value="4">Peaches</option>
+		<option value="5">Pears</option>
+		<option value="6">Bananas</option>
+	</select>
+	
+	<p>With auto-scrolling</p>
+	<select id="fruits4" multiple="multiple" style="width:200px;">
+		<option value="1">Apples</option>
+		<option value="2">Oranges</option>
+		<option value="3">Cherries</option>
+		<option value="4">Peaches</option>
+		<option value="5">Pears</option>
+		<option value="6">Bananas</option>
+		<option value="7">Grapes</option>
+		<option value="8">Kiwi</option>
+		<option value="9">Mangos</option>
+		<option value="10">Pineapples</option>
+		<option value="11">Tomatos</option>
+		<option value="12">Tangerines</option>
+		<option value="13">Lemons</option>
+	</select>
+	
+	<p>No resizing</p>
+	<select id="fruits5" multiple="multiple" style="width:200px;">
+		<option value="1">Apples</option>
+		<option value="2">Oranges</option>
+		<option value="3">Cherries</option>
+		<option value="4">Peaches</option>
+		<option value="5">Pears</option>
+		<option value="6">Bananas</option>
+		<option value="7">Grapes</option>
+		<option value="8">Kiwi</option>
+		<option value="9">Mangos</option>
+		<option value="10">Pineapples</option>
+		<option value="11">Tomatos</option>
+		<option value="12">Tangerines</option>
+		<option value="13">Lemons</option>
+	</select>
+
+	<p>Custom width and no resizing</p>
+	<select id="fruits6" multiple="multiple" style="width:200px;">
+		<option value="1">Apples</option>
+		<option value="2">Oranges</option>
+		<option value="3">Cherries</option>
+		<option value="4">Peaches</option>
+		<option value="5">Pears</option>
+		<option value="6">Bananas</option>
+		<option value="7">Grapes</option>
+		<option value="8">Kiwi</option>
+		<option value="9">Mangos</option>
+		<option value="10">Pineapples</option>
+		<option value="11">Tomatos</option>
+		<option value="12">Tangerines</option>
+		<option value="13">Lemons</option>
+	</select>	
+	<br /><br /><br /><br />
+
+	<script>
+	$(document).ready(function() {
+		$('#fruits1').dropdowncheckbox();
+		$('#fruits2').dropdowncheckbox();
+		$('#fruits3').dropdowncheckbox({width:400});
+		$('#fruits4').dropdowncheckbox();
+		$('#fruits5').dropdowncheckbox({resize:"none"});
+		$('#fruits6').dropdowncheckbox({width: 150, resize:"none"});
+	});
+	</script>
+</body>
+</html>
