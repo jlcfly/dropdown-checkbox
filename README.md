@@ -1,7 +1,7 @@
 # dropdown-checkbox
-jQuery-based drop down checkbox list
+JQuery-based drop down checkbox list (JQuery 1.7.2+)
 
-dropdown-checkbox is a jQuery-based drop down checkbox list meant to easily replace the HTML `select` tag with the "multiple" attribute added and turn it into a dropdown list using checkboxes. The checkbox list synchronizes with the `select` id as items are checked and unchecked, so you can submit it with your form as normal.
+dropdown-checkbox is a JQuery-based drop down checkbox list meant to easily replace the HTML `select` tag with the "multiple" attribute added and turn it into a dropdown list using checkboxes. The checkbox list synchronizes with the `select` id as items are checked and unchecked, so you can submit it with your form as normal.
 
 See demo.html for examples.
 
@@ -61,5 +61,4 @@ NOTE: resizing works a little differently on Google Chrome than Firefox, possibl
 			});
 		});
 	</script>
-
 
