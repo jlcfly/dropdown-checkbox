@@ -190,10 +190,15 @@
 					this.containerWidth = $(this.id+"-container").width()
 					var elem = $(this.id+"-container").get(0);
 
-					if ((elem.scrollHeight > elem.clientHeight) && 
-						(elem.scrollWidth > elem.clientWidth)) {
-						this.containerWidth += this.scrollbarWidth();
-						$(this.id+"-container").width(this.containerWidth);
+					if (elem.scrollHeight > elem.clientHeight) {
+						if (elem.scrollWidth > elem.clientWidth) {
+							this.containerWidth += this.scrollbarWidth();
+							$(this.id+"-container").width(this.containerWidth);
+						}
+						else if (elem.scrollWidth == elem.clientWidth) {
+							this.containerWidth -= this.scrollbarWidth();
+							$(this.id+"-container").width(this.containerWidth);
+						}
 					}
 				}
 			}
